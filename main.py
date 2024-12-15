@@ -4,7 +4,13 @@ from app.interface.cli import Cli
 
 if __name__ == "__main__":
     buffer = Buffer()  # Shared task buffer
-    server_count = int(input("Specify the number of servers: "))  # Number of servers
+    while True:
+        server_count = input("Specify the number of servers: ")  # Number of servers
+        if server_count.isdigit():
+            server_count = int(server_count)
+            break
+        print("A number must be specified")
+
     cluster = Cluster(buffer, server_count)  # Initialize the cluster
 
     # Start server threads
