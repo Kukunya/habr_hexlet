@@ -30,7 +30,7 @@ This is a Python-based distributed system simulator. It models a system with mul
 1. Clone the repository or download the code:
    ```bash
    git clone https://github.com/Kukunya/habr_hexlet_cluster_imitation.git
-   cd distributed-system-simulator
+   cd habr_hexlet_cluster_imitation
    ```
 
 2. Install required dependencies:
